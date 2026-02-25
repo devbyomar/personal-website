@@ -2,9 +2,9 @@ import { NavItem, SocialLink } from "@/types";
 
 export const siteConfig = {
   name: "Omar Baher",
-  title: "Senior Data Solutions Engineer · Analytics Engineer · Builder",
+  title: "Software & Data Engineer · Systems Builder",
   description:
-    "I architect cloud-native data platforms and analytics systems at enterprise scale. Databricks, Azure, PySpark, Delta Lake, dbt — from legacy modernization to medallion-architecture pipelines serving tens of millions of records to senior leadership.",
+    "I build cloud-native data platforms at enterprise scale and ship production software end to end. From medallion-architecture pipelines on Databricks to multi-tenant SaaS and AI agent systems — I engineer across the full stack because great systems don't respect layer boundaries.",
   url: "https://omarbaher.dev",
   ogImage: "/og.png",
   email: "obaher@uwaterloo.ca",

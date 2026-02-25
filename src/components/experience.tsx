@@ -87,7 +87,7 @@ export function Experience() {
         <SectionHeader
           label="Experience"
           title="Where I've built"
-          description="Enterprise data platforms, government ML systems, and a business of my own."
+          description="Enterprise data platforms, government ML systems, production software, and a business of my own."
         />
       </FadeIn>
 

@@ -16,8 +16,8 @@ export function FeaturedWork() {
       <FadeIn>
         <SectionHeader
           label="Featured Work"
-          title="Systems I've built"
-          description="Production-grade projects with real architecture decisions, real tradeoffs, and real deployment pipelines."
+          title="Systems I've shipped"
+          description="Full-stack production software with real architecture decisions, real tradeoffs, and real users. I don't just design data platforms — I build products."
         />
       </FadeIn>
 
