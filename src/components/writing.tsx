@@ -13,6 +13,13 @@ const posts = [
     date: "Coming soon",
   },
   {
+    title: "Server Actions as the Enforcement Layer: Why the UI Suggests but the Server Decides",
+    description:
+      "On building multi-tenant SaaS where plan limits, auth checks, and input validation all live in Server Actions — and why moving enforcement to the server simplified everything.",
+    tag: "Software Architecture",
+    date: "Coming soon",
+  },
+  {
     title: "Medallion Architecture in Practice: Modeling Tens of Millions of Records",
     description:
       "How I structured bronze, silver, and gold layers with PySpark and Delta Lake for an operational analytics product — partitioned semantic models, incremental loads, and optimized refresh strategies.",
@@ -20,17 +27,17 @@ const posts = [
     date: "Coming soon",
   },
   {
-    title: "Re-Architecting Enterprise Data Quality to Save $30K/Year",
+    title: "Deterministic Validation Gates for AI Agent Pipelines",
     description:
-      "The before and after of rebuilding a data quality platform — moving from manual checks and legacy tooling to automated validation gates, freshness monitoring, and cost-aware infrastructure.",
-    tag: "Architecture",
+      "LLMs can produce structurally invalid output that looks correct. Here's how I built 41 validation gates with pydantic, Zod, and pytest that no hallucination can bypass.",
+    tag: "AI Engineering",
     date: "Coming soon",
   },
   {
-    title: "Deterministic Validation Gates for AI Agent Pipelines",
+    title: "Building a Multi-Tenant SaaS with Next.js, Prisma, and Stripe",
     description:
-      "LLMs can produce structurally invalid output that looks correct. Here's how I built validation gates with pydantic and pytest that no hallucination can bypass.",
-    tag: "AI Engineering",
+      "A technical walkthrough of COI Vault — org-scoped data isolation, JWT sessions, Stripe webhook lifecycle, and soft deletes with audit trails for compliance-grade B2B software.",
+    tag: "Full-Stack Engineering",
     date: "Coming soon",
   },
 ];

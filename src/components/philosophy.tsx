@@ -11,9 +11,9 @@ const principles = [
     icon: "◇",
   },
   {
-    title: "Data Quality as a Gate",
+    title: "Server-Side Enforcement",
     description:
-      "Quality isn't a dashboard you check after something breaks. It's an enforcement layer — dbt tests, schema validation with pydantic, freshness checks, and row-count assertions that block bad data before it reaches production. I've built enterprise-grade quality platforms that saved ~$30K/year.",
+      "The UI suggests, the server enforces. Plan limits, auth boundaries, input validation, and business rules all live in Server Actions or API handlers — never in client code. A beautiful button means nothing if the mutation behind it doesn't check permissions.",
     icon: "△",
   },
   {
@@ -23,21 +23,21 @@ const principles = [
     icon: "⬡",
   },
   {
-    title: "Platform Modernization",
+    title: "Type Safety End to End",
     description:
-      "Legacy systems don't need patches — they need thoughtful re-architecture. I've led full on-prem to cloud-native migrations, replacing brittle manual processes with Databricks, ADF orchestration, Delta Lake storage, and automated pipeline monitoring. The goal is zero-touch reliability.",
+      "From database schema to API response to UI component — types should flow without breaks. Prisma generates them from the schema, Zod validates at boundaries, and TypeScript catches the rest at compile time. Runtime surprises are a design failure.",
     icon: "○",
   },
   {
-    title: "Pipeline Orchestration at Scale",
+    title: "Deterministic Over Probabilistic",
     description:
-      "Pipelines that process tens of millions of records need more than a scheduler. Partitioned loads, incremental processing, optimized refresh strategies, and idempotent designs — every pipeline I build handles failure gracefully and scales without rewrites.",
+      "AI pipelines need guardrails that LLMs can't hallucinate past. Structural validation, schema conformance checks, and rule-based gates ensure that every output is verified before it moves downstream — 41 validators in History Tales exist for exactly this reason.",
     icon: "□",
   },
   {
     title: "Production-First Mentality",
     description:
-      "Error handling, audit logging, data freshness checks, input validation, and CI/CD ship with v1 — not as tech debt. Production doesn't wait for your refactor sprint, and a broken pipeline at 6 AM doesn't care about your backlog.",
+      "Error handling, audit logging, data freshness checks, input validation, and CI/CD ship with v1 — not as tech debt. Whether it's a data pipeline at 6 AM or a SaaS endpoint under load, production doesn't wait for your refactor sprint.",
     icon: "⬢",
   },
 ];
@@ -49,7 +49,7 @@ export function Philosophy() {
         <SectionHeader
           label="Engineering Philosophy"
           title="How I build"
-          description="Principles forged from modernizing enterprise platforms, building medallion-architecture pipelines, and shipping analytics products at scale."
+          description="Principles forged from enterprise data platforms, production SaaS, and AI agent systems — the same engineering rigor, regardless of the layer."
         />
       </FadeIn>
 

@@ -18,7 +18,7 @@ export function Contact() {
         <SectionHeader
           label="Contact"
           title="Let's connect"
-          description="I'm always open to discussing data platform architecture, analytics engineering, and interesting technical challenges."
+          description="I'm always open to discussing systems architecture, data platform design, software engineering, and interesting technical challenges."
         />
       </FadeIn>
 

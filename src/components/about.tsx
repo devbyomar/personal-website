@@ -18,12 +18,12 @@ const skills = {
   "Languages & Frameworks": [
     "Python",
     "PySpark",
-    "Pandas",
+    "TypeScript",
     "SQL (T-SQL · Spark SQL)",
     "Scala",
-    "Bash / Shell",
-    "TypeScript",
-    "Next.js",
+    "Next.js (App Router)",
+    "FastAPI",
+    "Node.js",
   ],
   "Analytics & Modeling": [
     "dbt (Core & Cloud)",
@@ -34,15 +34,17 @@ const skills = {
     "Semantic Models",
     "DAX",
   ],
-  "Practices & Tooling": [
-    "CI/CD Pipelines",
-    "Git",
-    "pytest",
-    "pydantic",
+  "Software Engineering": [
+    "System Design",
+    "Multi-Tenant SaaS",
+    "Server Actions / API Design",
+    "Prisma / PostgreSQL",
+    "Stripe Billing",
+    "AI Agent Pipelines (LangGraph)",
+    "CI/CD",
     "Docker",
-    "Data Quality Engineering",
-    "ELT / ETL Design",
-    "Data Contracts",
+    "Git",
+    "pytest · pydantic · Vitest",
   ],
 };
 
@@ -50,7 +52,7 @@ const highlights = [
   {
     metric: "10M+",
     label: "Records Modeled",
-    detail: "Operational analytics across medallion architecture layers",
+    detail: "Medallion-architecture pipelines at Manulife",
   },
   {
     metric: "~$30K",
@@ -58,14 +60,14 @@ const highlights = [
     detail: "Re-architected enterprise data quality platform",
   },
   {
-    metric: "36%",
-    label: "Cost Reduction",
-    detail: "ML-based patent landscape maps at ISED Canada",
+    metric: "2",
+    label: "Production Systems",
+    detail: "SaaS platform & AI agent pipeline shipped end to end",
   },
   {
-    metric: "2+ yrs",
-    label: "Enterprise Scale",
-    detail: "Cloud-native platform modernization at Manulife",
+    metric: "41",
+    label: "Validation Gates",
+    detail: "Deterministic tests no LLM hallucination can bypass",
   },
 ];
 
@@ -75,8 +77,8 @@ export function About() {
       <FadeIn>
         <SectionHeader
           label="About"
-          title="Cloud-native data platforms at enterprise scale"
-          description="I design, build, and own end-to-end analytics platforms — from legacy modernization to production pipelines serving senior leadership."
+          title="Data platforms and production systems — end to end"
+          description="I build enterprise analytics pipelines by day and ship production software by night. The common thread: systems thinking, clean architecture, and code that works at scale."
         />
       </FadeIn>
 
@@ -92,26 +94,28 @@ export function About() {
               records through medallion-architecture pipelines using PySpark and Pandas.
             </p>
             <p>
-              I built the high-performance operational analytics product that senior
-              leadership uses daily — partitioned semantic models, optimized refresh
-              strategies, and data pipelines designed for both reliability and speed.
-              I also re-architected the enterprise data quality platform, cutting costs
-              by approximately $30K per year.
+              But I&apos;m also a software engineer who builds real products.{" "}
+              <span className="text-foreground font-medium">COI Vault</span> is a
+              multi-tenant SaaS platform with Stripe billing, audit trails, and
+              server-side plan enforcement.{" "}
+              <span className="text-foreground font-medium">History Tales</span> is
+              an AI agent pipeline with 18 LangGraph nodes and 41 deterministic
+              validation gates that no hallucination can bypass. Both are deployed,
+              tested, and running in production.
             </p>
             <p>
-              Before Manulife, I worked as an Associate Data Scientist at{" "}
-              <span className="text-foreground font-medium">Innovation, Science and Economic Development Canada</span>,
-              building ML-based patent landscape maps that reduced costs by 36% using
-              NLP techniques including word embeddings and text vectorization. I hold a{" "}
+              I think in systems — whether that means designing a dimensional model
+              for an analytics warehouse or architecting a Server Actions layer with
+              Zod validation and auth boundaries. The same engineering rigor applies:
+              clean abstractions, strict type safety, exhaustive testing, and
+              deployment pipelines from day one.
+            </p>
+            <p>
+              I hold a{" "}
               <span className="text-foreground font-medium">Bachelor of Mathematics in Computational Mathematics</span>{" "}
-              with a Statistics Minor from the University of Waterloo.
-            </p>
-            <p>
-              Beyond enterprise data, I build production software —
-              multi-tenant SaaS platforms and AI agent pipelines with deterministic
-              validation gates. I also run{" "}
-              <span className="text-foreground font-medium">ScrubHouse Inc.</span>,
-              an owner-operated services business I founded in 2024.
+              with a Statistics Minor from the University of Waterloo, and I also
+              run <span className="text-foreground font-medium">ScrubHouse Inc.</span>,
+              a services business I founded in 2024 alongside my full-time engineering role.
             </p>
           </div>
         </FadeIn>
