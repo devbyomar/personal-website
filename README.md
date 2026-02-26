@@ -67,4 +67,4 @@ Push to GitHub and import in [Vercel](https://vercel.com). Zero config needed.
 
 ## License
 
-Private — All rights reserved.
+Private - All rights reserved.

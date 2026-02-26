@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!project) return {};
 
   return {
-    title: `${project.title} — Case Study`,
+    title: `${project.title} - Case Study`,
     description: project.description,
     openGraph: {
-      title: `${project.title} — Case Study`,
+      title: `${project.title} - Case Study`,
       description: project.description,
       type: "article",
     },

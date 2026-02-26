@@ -36,7 +36,7 @@ export function HistoryTalesDiagram() {
     none: "No LLM",
   };
 
-  // Layout constants — generous spacing to avoid overlaps
+  // Layout constants - generous spacing to avoid overlaps
   const nodeW = 170;
   const nodeH = 44;
   const colGap = 30;    // horizontal gap between nodes
@@ -103,7 +103,7 @@ export function HistoryTalesDiagram() {
           fontWeight="600"
           fontFamily="var(--font-inter), system-ui"
         >
-          History Tales — 18-Node LangGraph Pipeline
+          History Tales - 18-Node LangGraph Pipeline
         </text>
 
         {/* Phase labels across top */}
@@ -247,7 +247,7 @@ export function HistoryTalesDiagram() {
           );
         })()}
 
-        {/* Dual model architecture annotation — positioned top-right, clear of nodes */}
+        {/* Dual model architecture annotation - positioned top-right, clear of nodes */}
         {(() => {
           const annoX = colX(3) + nodeW + 16;
           // If annotation would go off-canvas, place it below the title instead
