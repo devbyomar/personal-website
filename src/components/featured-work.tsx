@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Section, SectionHeader } from "@/components/ui/section";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 import { Badge } from "@/components/ui/badge";
@@ -7,7 +8,45 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { getFeaturedProjects } from "@/content/projects";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
-import { CoiVaultDiagram, HistoryTalesDiagram } from "@/components/diagrams";
+import {
+  CoiVaultDiagram,
+  HistoryTalesDiagram,
+  HistoryTalesApiDiagram,
+  HistoryTalesUiDiagram,
+} from "@/components/diagrams";
+
+function HistoryTalesTabbedDiagram() {
+  const [activeTab, setActiveTab] = useState<"pipeline" | "api" | "ui">("pipeline");
+
+  const tabs = [
+    { id: "pipeline" as const, label: "LangGraph Pipeline" },
+    { id: "api" as const, label: "API Architecture" },
+    { id: "ui" as const, label: "Web Interface" },
+  ];
+
+  return (
+    <div>
+      <div className="flex gap-1 px-4 pt-3">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              activeTab === tab.id
+                ? "bg-primary/10 text-primary border border-primary/20"
+                : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      {activeTab === "pipeline" && <HistoryTalesDiagram />}
+      {activeTab === "api" && <HistoryTalesApiDiagram />}
+      {activeTab === "ui" && <HistoryTalesUiDiagram />}
+    </div>
+  );
+}
 
 export function FeaturedWork() {
   const projects = getFeaturedProjects();
@@ -70,7 +109,7 @@ export function FeaturedWork() {
               {/* Architecture Diagram */}
               <div className="mx-8 mt-6 rounded-lg border border-border bg-muted/30 overflow-hidden">
                 {project.slug === "coi-vault" && <CoiVaultDiagram />}
-                {project.slug === "history-tales-script-generator" && <HistoryTalesDiagram />}
+                {project.slug === "history-tales-script-generator" && <HistoryTalesTabbedDiagram />}
               </div>
 
               {/* Problem & Architecture */}
