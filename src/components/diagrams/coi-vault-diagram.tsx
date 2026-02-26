@@ -26,7 +26,7 @@ export function CoiVaultDiagram() {
 
         {/* ── Title ──────────────────────────────────── */}
         <text x="440" y="28" textAnchor="middle" fill="hsl(0 0% 98%)" fontSize="13" fontWeight="600" fontFamily="var(--font-inter), system-ui">
-          COI Vault — System Architecture
+          COI Vault - System Architecture
         </text>
 
         {/* ══════════════════════════════════════════════ */}
@@ -51,7 +51,7 @@ export function CoiVaultDiagram() {
         {/* ══════════════════════════════════════════════ */}
         <rect x="260" y="48" width="360" height="168" rx="8" fill="hsl(217 91% 60% / 0.04)" stroke="hsl(217 91% 60% / 0.15)" strokeWidth="1" />
         <text x="440" y="67" textAnchor="middle" fill="hsl(217 91% 60%)" fontSize="9" fontWeight="500" letterSpacing="1.2">
-          VERCEL — NEXT.JS APP ROUTER
+          VERCEL - NEXT.JS APP ROUTER
         </text>
 
         {/* Server Components */}

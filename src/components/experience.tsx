@@ -17,10 +17,10 @@ const experience: ExperienceEntry[] = [
     role: "Senior Data Solutions Engineer",
     company: "Manulife Investment Management",
     location: "Toronto, ON",
-    period: "Dec 2022 — Present",
+    period: "Dec 2022 - Present",
     highlights: [
       "Own end-to-end modernization of a legacy on-prem analytics platform to a cloud-native architecture using Databricks, Azure Data Factory, ADLS with Delta Lake, Azure SQL MI, PySpark, and Pandas",
-      "Built high-performance operational analytics product for senior leadership — modeling tens of millions of records across medallion architecture layers with partitioned semantic models and optimized refresh strategies",
+      "Built high-performance operational analytics product for senior leadership - modeling tens of millions of records across medallion architecture layers with partitioned semantic models and optimized refresh strategies",
       "Re-architected enterprise data quality platform, reducing infrastructure and operational costs by approximately $30K per year",
     ],
     technologies: [
@@ -38,7 +38,7 @@ const experience: ExperienceEntry[] = [
     role: "Associate Data Scientist",
     company: "Innovation, Science and Economic Development Canada",
     location: "Remote",
-    period: "Sep 2021 — Apr 2022",
+    period: "Sep 2021 - Apr 2022",
     highlights: [
       "Developed ML-based patent landscape maps that reduced operational costs by 36% through automated classification and clustering",
       "Applied NLP techniques including word embeddings and text vectorization for patent document analysis at scale",
@@ -55,7 +55,7 @@ const experience: ExperienceEntry[] = [
     role: "Data Science Developer Intern",
     company: "Government of Ontario",
     location: "Remote",
-    period: "Jan 2021 — Apr 2021",
+    period: "Jan 2021 - Apr 2021",
     highlights: [
       "Built Power BI dashboard prototypes for internal stakeholder reporting and decision support",
       "Designed Python text-processing pipeline for document classification using logistic regression models",
@@ -65,7 +65,7 @@ const experience: ExperienceEntry[] = [
 ];
 
 const education = {
-  degree: "Bachelor of Mathematics — Computational Mathematics",
+  degree: "Bachelor of Mathematics - Computational Mathematics",
   minor: "Statistics Minor",
   school: "University of Waterloo",
   year: "2022",
@@ -75,9 +75,9 @@ const leadership = {
   role: "President",
   company: "ScrubHouse Inc.",
   location: "Toronto, ON",
-  period: "May 2024 — Present",
+  period: "May 2024 - Present",
   description:
-    "Founded and operate a services business alongside my full-time engineering role — managing operations, client acquisition, and growth strategy.",
+    "Founded and operate a services business alongside my full-time engineering role - managing operations, client acquisition, and growth strategy.",
 };
 
 export function Experience() {
@@ -165,7 +165,7 @@ export function Experience() {
               Leadership
             </span>
             <h3 className="mt-4 text-base font-semibold text-foreground">
-              {leadership.role} — {leadership.company}
+              {leadership.role} - {leadership.company}
             </h3>
             <p className="text-sm text-muted-foreground mt-1">
               {leadership.location} · {leadership.period}

@@ -8,21 +8,21 @@ const posts = [
   {
     title: "Modernizing Legacy Analytics: On-Prem to Databricks + Delta Lake",
     description:
-      "Lessons from leading a full platform migration — replacing brittle on-prem pipelines with Databricks, ADLS Gen2, Delta Lake, and Azure Data Factory, while keeping the business running.",
+      "Lessons from leading a full platform migration - replacing brittle on-prem pipelines with Databricks, ADLS Gen2, Delta Lake, and Azure Data Factory, while keeping the business running.",
     tag: "Platform Engineering",
     date: "Coming soon",
   },
   {
     title: "Server Actions as the Enforcement Layer: Why the UI Suggests but the Server Decides",
     description:
-      "On building multi-tenant SaaS where plan limits, auth checks, and input validation all live in Server Actions — and why moving enforcement to the server simplified everything.",
+      "On building multi-tenant SaaS where plan limits, auth checks, and input validation all live in Server Actions - and why moving enforcement to the server simplified everything.",
     tag: "Software Architecture",
     date: "Coming soon",
   },
   {
     title: "Medallion Architecture in Practice: Modeling Tens of Millions of Records",
     description:
-      "How I structured bronze, silver, and gold layers with PySpark and Delta Lake for an operational analytics product — partitioned semantic models, incremental loads, and optimized refresh strategies.",
+      "How I structured bronze, silver, and gold layers with PySpark and Delta Lake for an operational analytics product - partitioned semantic models, incremental loads, and optimized refresh strategies.",
     tag: "Data Engineering",
     date: "Coming soon",
   },
@@ -36,7 +36,7 @@ const posts = [
   {
     title: "Building a Multi-Tenant SaaS with Next.js, Prisma, and Stripe",
     description:
-      "A technical walkthrough of COI Vault — org-scoped data isolation, JWT sessions, Stripe webhook lifecycle, and soft deletes with audit trails for compliance-grade B2B software.",
+      "A technical walkthrough of COI Vault - org-scoped data isolation, JWT sessions, Stripe webhook lifecycle, and soft deletes with audit trails for compliance-grade B2B software.",
     tag: "Full-Stack Engineering",
     date: "Coming soon",
   },

@@ -77,7 +77,7 @@ export function About() {
       <FadeIn>
         <SectionHeader
           label="About"
-          title="Data platforms and production systems — end to end"
+          title="Data platforms and production systems - end to end"
           description="I build enterprise analytics pipelines by day and ship production software by night. The common thread: systems thinking, clean architecture, and code that works at scale."
         />
       </FadeIn>
@@ -90,7 +90,7 @@ export function About() {
               <span className="text-foreground font-medium">Manulife Investment Management</span>,
               where I own the end-to-end modernization of a legacy on-prem analytics
               platform into a cloud-native architecture on Databricks, Azure Data Factory,
-              ADLS with Delta Lake, and Azure SQL MI — processing tens of millions of
+              ADLS with Delta Lake, and Azure SQL MI - processing tens of millions of
               records through medallion-architecture pipelines using PySpark and Pandas.
             </p>
             <p>
@@ -104,7 +104,7 @@ export function About() {
               tested, and running in production.
             </p>
             <p>
-              I think in systems — whether that means designing a dimensional model
+              I think in systems - whether that means designing a dimensional model
               for an analytics warehouse or architecting a Server Actions layer with
               Zod validation and auth boundaries. The same engineering rigor applies:
               clean abstractions, strict type safety, exhaustive testing, and

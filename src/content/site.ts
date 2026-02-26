@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Omar Baher",
   title: "Software & Data Engineer · Systems Builder",
   description:
-    "I build cloud-native data platforms at enterprise scale and ship production software end to end. From medallion-architecture pipelines on Databricks to multi-tenant SaaS and AI agent systems — I engineer across the full stack because great systems don't respect layer boundaries.",
+    "I build cloud-native data platforms at enterprise scale and ship production software end to end. From medallion-architecture pipelines on Databricks to multi-tenant SaaS and AI agent systems - I engineer across the full stack because great systems don't respect layer boundaries.",
   url: "https://omarbaher.dev",
   ogImage: "/og.png",
   email: "obaher@uwaterloo.ca",
