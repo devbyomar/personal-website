@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { getFeaturedProjects } from "@/content/projects";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
+import { CoiVaultDiagram, HistoryTalesDiagram } from "@/components/diagrams";
 
 export function FeaturedWork() {
   const projects = getFeaturedProjects();
@@ -66,16 +67,10 @@ export function FeaturedWork() {
                 </p>
               </div>
 
-              {/* Screenshot placeholder */}
-              <div className="mx-8 mt-6 rounded-lg border border-border bg-muted/30 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto rounded-lg bg-muted flex items-center justify-center mb-3">
-                    <div className="w-6 h-6 rounded bg-muted-foreground/20" />
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Screenshot / Architecture Diagram
-                  </p>
-                </div>
+              {/* Architecture Diagram */}
+              <div className="mx-8 mt-6 rounded-lg border border-border bg-muted/30 overflow-hidden">
+                {project.slug === "coi-vault" && <CoiVaultDiagram />}
+                {project.slug === "history-tales-script-generator" && <HistoryTalesDiagram />}
               </div>
 
               {/* Problem & Architecture */}
